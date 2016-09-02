@@ -1,0 +1,30 @@
+{
+    "coverage": {
+        "country": "us",
+        "state": "co",
+        "county": "Douglas",
+        "US Census": {
+            "geoid": "08035"
+        }
+    },
+    "data": "https://apps.douglas.co.us/arcgis/rest/services/opendata/Centerline/MapServer/0",
+    "website": "http://opendata.arcgis.com/datasets/8bcc0a016f04406d98d3be650b94584c_0",
+    "type": "esri",
+    "conform": {
+        "type": "geojson",
+        "name": [
+            "PRE_DIR",
+            "STREET_NAME",
+            "SUFFIX",
+            "POST_DIR"
+        ],
+        "oneway": "ONEWAY",
+        "addr:from:left": "L_ADD_FROM",
+        "addr:from:right": "R_ADD_FROM",
+        "addr:to:left": "L_ADD_TO",
+        "addr:to:right": "R_ADD_TO",
+        "postcode:left": "L_ZIP_CODE",
+        "postcode:right": "R_ZIP_CODE",
+        "maxspeed": "SPEED"
+    }
+}

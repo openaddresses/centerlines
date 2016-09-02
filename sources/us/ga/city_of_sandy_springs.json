@@ -1,0 +1,40 @@
+{
+    "coverage": {
+        "country": "us",
+        "state": "ga",
+        "city": "Sandy Springs",
+        "US Census": {
+            "geoid": "1368516"
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -84.423,
+                33.943
+            ]
+        }
+    },
+    "data": "https://gis.sandyspringsga.gov/arcgis/rest/services/OpenData/GeneralReference/MapServer/101",
+    "website": "http://data.coss.opendata.arcgis.com/datasets/ee776b18fb724a59a7de5a3d2ca0eee0_101",
+    "type": "esri",
+    "conform": {
+        "type": "geojson",
+        "name": [
+            "StreetDirection",
+            "StreetName",
+            "StreetType",
+            "StreetSuffix",
+            "PostModifier"
+        ],
+        "oneway": "OneWay",
+        "addr:from:left": "LeftFrom",
+        "addr:from:right": "RightFrom",
+        "addr:to:left": "LeftTo",
+        "addr:to:right": "RightTo",
+        "city:left": "CityLeft",
+        "city:right": "CityRight",
+        "postcode:left": "ZipCodeLeft",
+        "postcode:right": "ZipCodeRight",
+        "maxspeed": "SpeedLimimt"
+    }
+}
