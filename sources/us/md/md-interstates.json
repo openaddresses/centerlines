@@ -19,6 +19,5 @@
     "conform": {
         "type": "geojson",
         "name": "ROADNAMELO"
-        }
     }
 }
