@@ -13,8 +13,8 @@
             ]
         }
     },
-    "data": "http://data.imap.maryland.gov/datasets/82842b1ff67b466086a4c097c6e7aa46_0",
-    "website": "http://data.imap.maryland.gov/datasets/82842b1ff67b466086a4c097c6e7aa46_0.geojson",
+    "data": "http://data.imap.maryland.gov/datasets/82842b1ff67b466086a4c097c6e7aa46_0.geojson",
+    "website": "http://data.imap.maryland.gov/datasets/82842b1ff67b466086a4c097c6e7aa46_0",
     "type": "geojson",
     "conform": {
         "type": "geojson",
