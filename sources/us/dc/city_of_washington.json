@@ -1,0 +1,32 @@
+{
+    "coverage": {
+        "country": "us",
+        "state": "ny",
+        "city": "New York",
+        "US Census": {
+            "geoid": "3651000"
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -74.258,
+                40.705
+            ]
+        }
+    },
+    "data": "http://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/Transportation_WebMercator/MapServer/41",
+    "website": "http://opendata.arcgis.com/datasets/23246020d6894453bdfcee00956df818_41",
+    "type": "esri",
+    "conform": {
+        "type": "geojson",
+        "name": "ST_NAME",
+        "oneway": "DIRECTIONALITY",
+        "addr:from:left": "FROMLEFTADDRESS",
+        "addr:from:right": "FROMRIGHTADDRESS",
+        "addr:to:left": "TOLEFTADDRESS",
+        "addr:to:right": "TORIGHTADDRESS",
+        "postcode:left": "LEFTZIPCODE",
+        "postcode:right": "RIGHTZIPCODE",
+        "maxspeed": ""
+    }
+}
