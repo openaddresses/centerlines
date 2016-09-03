@@ -19,21 +19,7 @@
     "type": "geojson",
     "conform": {
         "type": "geojson",
-        "name": [
-            "StreetDirection",
-            "StreetName",
-            "StreetType",
-            "StreetSuffix",
-            "PostModifier"
-        ],
-        "oneway": "OneWay",
-        "addr:from:left": "LeftFrom",
-        "addr:from:right": "RightFrom",
-        "addr:to:left": "LeftTo",
-        "addr:to:right": "RightTo",
-        "city:left": "CityLeft",
-        "city:right": "CityRight",
-        "postcode:left": "ZipCodeLeft",
-        "postcode:right": "ZipCodeRight"
+        "name": "ROADNAMELO"
+        }
     }
 }
