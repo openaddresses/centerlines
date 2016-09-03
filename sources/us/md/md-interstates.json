@@ -1,0 +1,39 @@
+{
+    "coverage": {
+        "country": "us",
+        "state": "md",
+        "city": "Statewide",
+        "US Census": {
+            "geoid": "24"
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -76.6744939,
+                38.9466584
+            ]
+        }
+    },
+    "data": "http://data.imap.maryland.gov/datasets/82842b1ff67b466086a4c097c6e7aa46_0",
+    "website": "http://data.imap.maryland.gov/datasets/82842b1ff67b466086a4c097c6e7aa46_0.geojson",
+    "type": "geojson",
+    "conform": {
+        "type": "geojson",
+        "name": [
+            "StreetDirection",
+            "StreetName",
+            "StreetType",
+            "StreetSuffix",
+            "PostModifier"
+        ],
+        "oneway": "OneWay",
+        "addr:from:left": "LeftFrom",
+        "addr:from:right": "RightFrom",
+        "addr:to:left": "LeftTo",
+        "addr:to:right": "RightTo",
+        "city:left": "CityLeft",
+        "city:right": "CityRight",
+        "postcode:left": "ZipCodeLeft",
+        "postcode:right": "ZipCodeRight"
+    }
+}
