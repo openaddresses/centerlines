@@ -1,0 +1,23 @@
+{
+    "coverage": {
+        "country": "us",
+        "state": "md",
+        "US Census": {
+            "geoid": "24"
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -76.6744939,
+                38.9466584
+            ]
+        }
+    },
+    "data": "http://data.imap.maryland.gov/datasets/23b35c39bba2454a8037bb6d24cdac83_1.geojson",
+    "website": "http://data.imap.maryland.gov/datasets/23b35c39bba2454a8037bb6d24cdac83_1",
+    "type": "geojson",
+    "conform": {
+        "type": "geojson",
+        "name": "ROADNAMELO"
+    }
+}
