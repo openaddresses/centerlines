@@ -1,0 +1,32 @@
+{
+    "coverage": {
+        "country": "us",
+        "state": "ny",
+        "city": "New York",
+        "US Census": {
+            "geoid": "3651000"
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -74.258,
+                40.705
+            ]
+        }
+    },
+    "data": "https://data.cityofnewyork.us/api/geospatial/exjm-f27b?method=export&format=GeoJSON",
+    "website": "https://data.cityofnewyork.us/City-Government/NYC-Street-Centerline-CSCL-/exjm-f27b",
+    "type": "http",
+    "conform": {
+        "type": "geojson",
+        "name": "st_name",
+        "oneway": "trafdir",
+        "addr:from:left": "l_low_hn",
+        "addr:from:right": "r_low_hn",
+        "addr:to:left": "l_high_hn",
+        "addr:to:right": "r_high_hn",
+        "postcode:left": "l_zip",
+        "postcode:right": "r_zip",
+        "maxspeed": ""
+    }
+}
