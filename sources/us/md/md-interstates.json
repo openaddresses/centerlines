@@ -2,7 +2,6 @@
     "coverage": {
         "country": "us",
         "state": "md",
-        "city": "Statewide",
         "US Census": {
             "geoid": "24"
         },
