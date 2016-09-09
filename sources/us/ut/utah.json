@@ -1,0 +1,24 @@
+{
+    "coverage": {
+        "country": "us",
+        "state": "ut",
+        "US Census": {
+            "geoid": "49"
+        }
+    },
+    "data": "ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/TRANSPORTATION/UnpackagedData/Roads/_Statewide/Roads_shp.zip",
+    "website": "http://gis.utah.gov/data/sgid-transportation/roads-system/",
+    "type": "ftp",
+    "conform": {
+        "type": "shp",
+        "name": "STREETNAME",
+        "oneway": "ONEWAY",
+        "addr:from:left": "L_F_ADD",
+        "addr:from:right": "R_F_ADD",
+        "addr:to:left": "L_T_ADD",
+        "addr:to:right": "R_T_ADD",
+        "postcode:left": "ZIPLEFT",
+        "postcode:right": "ZIPRIGHT",
+        "maxspeed": "SPEED"
+    }
+}
