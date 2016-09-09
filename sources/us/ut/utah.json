@@ -8,7 +8,7 @@
     },
     "data": "ftp://ftp.agrc.utah.gov/UtahSGID_Vector/UTM12_NAD83/TRANSPORTATION/UnpackagedData/Roads/_Statewide/Roads_shp.zip",
     "website": "http://gis.utah.gov/data/sgid-transportation/roads-system/",
-    "type": "shp",
+    "type": "ftp",
     "conform": {
         "type": "shp",
         "name": "STREETNAME",
