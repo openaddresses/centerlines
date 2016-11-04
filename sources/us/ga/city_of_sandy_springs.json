@@ -35,6 +35,6 @@
         "city:right": "CityRight",
         "postcode:left": "ZipCodeLeft",
         "postcode:right": "ZipCodeRight",
-        "maxspeed": "SpeedLimimt"
+        "maxspeed": "SpeedLimit"
     }
 }
