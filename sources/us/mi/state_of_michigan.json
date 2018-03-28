@@ -1,0 +1,47 @@
+{
+    "coverage": {
+        "country": "us",
+        "state": "mi",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -84.7,
+                45.5
+            ]
+        }
+    },
+    "data": "https://gisago.mcgi.state.mi.us/arcgis/rest/services/OpenData/michigan_geographic_framework/MapServer/20",
+    "website": "https://gis-michigan.opendata.arcgis.com/datasets/all-roads-v17a",
+    "type": "esri",
+    "conform": {
+        "type": "geojson",
+        "name": [
+            "FEDIRP",
+            "NAME",
+            "FETYPE",
+            "FEDIRS"
+        ],
+        "name_1": [
+            "FEDIRP2",
+            "NAME2",
+            "FETYPE2",
+            "FEDIRS2"
+        ],
+        "name_2": [
+            "FEDIRP3",
+            "NAME3",
+            "FETYPE3",
+            "FEDIRS3"
+        ],
+        "oneway": "",
+        "addr:from:left": "FRADDL",
+        "addr:from:right": "FRADDR",
+        "addr:to:left": "TOADDL",
+        "addr:to:right": "TOADDR",
+        "city:left": "",
+        "city:right": "",
+        "postcode:left": "ZIPL",
+        "postcode:right": "ZIPR",
+        "maxspeed": "SPEED"
+    }
+}
