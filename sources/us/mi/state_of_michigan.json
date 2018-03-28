@@ -10,7 +10,7 @@
             ]
         }
     },
-    "data": "https://gisago.mcgi.state.mi.us/arcgis/rest/services/OpenData/michigan_geographic_framework/MapServer/20/query?outFields=*&where=1%3D1",
+    "data": "https://gisago.mcgi.state.mi.us/arcgis/rest/services/OpenData/michigan_geographic_framework/MapServer/20",
     "website": "https://gis-michigan.opendata.arcgis.com/datasets/all-roads-v17a",
     "type": "esri",
     "conform": {
