@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "b4079ac5e102ebd71b7cb73d07ca41eae0bd64da8d5c2176fbd7cb4538c63a38"
+            "sha256": "fb1387d11c0809082e07b1079c3384473e07a7f110905a713c7338884cfcf6b3"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -49,7 +49,15 @@
                 "sha256:63b52e3c866428a224f97cab011de738c36aec0185aa91cfacd418b5d58911d1",
                 "sha256:ec22d826a36ed72a7358ff3fe56cbd4ba69dd7a6718ffd450ff0e9df7a47ce6a"
             ],
+            "index": "pypi",
             "version": "==2.19.1"
+        },
+        "requests-ftp": {
+            "hashes": [
+                "sha256:7504ceb5cba8a5c0135ed738596820a78c5f2be92d79b29f96ba99b183d8057a"
+            ],
+            "index": "pypi",
+            "version": "==0.3.1"
         },
         "simplejson": {
             "hashes": [

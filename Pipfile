@@ -5,6 +5,8 @@ name = "pypi"
 
 [packages]
 esridump = "*"
+requests-ftp = "*"
+requests = "*"
 
 [dev-packages]
 
