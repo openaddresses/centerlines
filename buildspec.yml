@@ -3,7 +3,6 @@ version: 0.2
 phases:
   install:
     commands:
-      - pip install -U pip pipenv
       - pipenv install --dev --system --deploy
   build:
     commands:
