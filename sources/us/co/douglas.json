@@ -7,7 +7,7 @@
             "geoid": "08035"
         }
     },
-    "data": "https://apps.douglas.co.us/arcgis/rest/services/opendata/Centerline/MapServer/0",
+    "data": "https://apps.douglas.co.us/arcgis/rest/services/PlanningTheme/MapServer/31",
     "website": "http://opendata.arcgis.com/datasets/8bcc0a016f04406d98d3be650b94584c_0",
     "type": "esri",
     "conform": {
