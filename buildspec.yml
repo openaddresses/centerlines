@@ -6,4 +6,5 @@ phases:
       - pipenv install --dev --system --deploy
   build:
     commands:
-      - echo "Build step!"
+      - echo "Sources that have changed:"
+      - echo $(git diff --name-status master | grep ^sources/)
