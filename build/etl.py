@@ -2,6 +2,7 @@ import argparse
 import json
 import logging
 import sys
+import tempfile
 
 
 logger = logging.getLogger('etl')
@@ -17,7 +18,7 @@ def main():
 
     logger.info("Parsing source %s, type %s, from %s", args.source.name, source['type'], source['data'])
 
-    with tempfile.TemporaryFile() as fp:
+    with tempfile.TemporaryFile('w', encoding="utf8") as fp:
         extract(source, fp)
         logger.info("Downloaded %d bytes", fp.tell())
 
@@ -27,7 +28,7 @@ def main():
 
 def setup_logging():
     root = logging.getLogger()
-    root.setLevel(logging.DEBUG)
+    root.setLevel(logging.INFO)
 
     ch = logging.StreamHandler(sys.stdout)
     ch.setLevel(logging.DEBUG)
@@ -51,7 +52,7 @@ def extract(source, output):
             'features': features,
         }
 
-        json.dump(features, delimiters=(':',','))
+        json.dump(features, output, separators=(',', ':'))
 
     elif source_type == 'http':
         import requests
@@ -69,7 +70,7 @@ def extract(source, output):
         logger.error("Unknown source type %s", source_type)
 
 
-def transform():
+def transform(source, output):
     pass
 
 
