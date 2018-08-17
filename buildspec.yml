@@ -7,4 +7,4 @@ phases:
   build:
     commands:
       - echo "Sources that have changed:"
-      - echo $(git diff --name-status master | grep ^sources/)
+      - for s in $(git diff --name-status master | grep ^sources/); do python build/etl.py $s; done
