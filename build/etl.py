@@ -1,6 +1,7 @@
 import argparse
 import json
 import logging
+import shutil
 import sys
 import tempfile
 
@@ -18,9 +19,9 @@ def main():
 
     logger.info("Parsing source %s, type %s, from %s", args.source.name, source['type'], source['data'])
 
-    with tempfile.TemporaryFile('w', encoding="utf8") as fp:
+    with tempfile.NamedTemporaryFile('w+b') as fp:
         extract(source, fp)
-        logger.info("Downloaded %d bytes", fp.tell())
+        logger.info("Downloaded %d bytes to %s", fp.tell(), fp.name)
 
         fp.seek(0)
         transform(source, fp)
@@ -43,8 +44,9 @@ def extract(source, output):
 
     if source_type == 'esri':
         from esridump.dumper import EsriDumper
+        import codecs
 
-        dumper = EsriDumper(source_url)
+        dumper = EsriDumper(source_url, logger)
 
         features = list(dumper)
         feature_collection = {
@@ -52,19 +54,24 @@ def extract(source, output):
             'features': features,
         }
 
-        json.dump(features, output, separators=(',', ':'))
+        json.dump(features, codecs.getwriter('utf-8')(output), separators=(',', ':'))
 
     elif source_type == 'http':
         import requests
 
         r = requests.get(source_url, stream=True)
+        r.raise_for_status()
         shutil.copyfileobj(r.raw, output)
 
     elif source_type == 'ftp':
+        import requests
         import requests_ftp
-        s = requests_ftp.FTPSession()
-        r = s.retr(source_url)
-        shutil.copyfileobj(r, output)
+        requests_ftp.monkeypatch_session()
+
+        s = requests.Session()
+        r = s.get(source_url)
+        r.raw.seek(0)
+        shutil.copyfileobj(r.raw, output)
 
     else:
         logger.error("Unknown source type %s", source_type)
