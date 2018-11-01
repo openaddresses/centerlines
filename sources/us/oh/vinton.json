@@ -1,0 +1,48 @@
+{
+    "coverage": {
+        "US Census": {
+            "geoid": "39163",
+            "name": "Vinton County",
+            "state": "Ohio"
+        },
+        "country": "us",
+        "state": "oh",
+        "county": "Vinton"
+    },
+    "data": "http://gis3.oit.ohio.gov/LBRS/_downloads/VIN_CL.zip",
+    "type": "http",
+    "compression": "zip",
+    "license": {
+        "url": "http://gis3.oit.ohio.gov/LBRS/_downloads/docs/White%20Paper-LBRS_2011.pdf#page=4"
+    },
+    "year": 2017,
+    "conform": {
+        "type": "shp",
+        "addr:from:left": "L_ADD_FROM",
+        "addr:from:right": "R_ADD_FROM",
+        "addr:to:left": "L_ADD_TO",
+        "addr:to:right": "R_ADD_TO",
+        "city:left": "L_CITY",
+        "city:right": "R_CITY",
+        "dual_carriageway": "DIV",
+        "lanes": "LANES",
+        "maxspeed": {
+            "function": "format",
+            "fields": ["SPEED"],
+            "format": "$1 mph"
+        },
+        "name": [
+            "ST_PRE",
+            "ST_NAME",
+            "ST_TYPE",
+            "ST_SUFFIX"
+        ],
+        "oneway": "DIR_TRAV",
+        "postcode:left": "L_ZIP",
+        "postcode:right": "R_ZIP",
+        "ref": "RD_NUM",
+        "surface": "STYPE",
+        "township:left": "L_TWP",
+        "township:right": "R_TWP"
+    }
+}
