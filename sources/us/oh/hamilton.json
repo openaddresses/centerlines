@@ -1,0 +1,45 @@
+{
+    "coverage": {
+        "US Census": {
+            "geoid": "39061",
+            "county": "Hamilton County",
+            "state": "Ohio"
+        },
+        "country": "us",
+        "state": "oh",
+        "county": "Hamilton"
+    },
+    "data": "https://cagisonline.hamilton-co.org/arcgis/rest/services/COUNTYWIDE/CagisCoreLayers/MapServer/5",
+    "license": {
+        "url": "https://data.cincinnati-oh.gov/dataset/Street-Centerlines/ece8-i5x4"
+    },
+    "year": 2018,
+    "type": "ESRI",
+    "conform": {
+        "type": "shp",
+        "access": "NAVIGABLE",
+        "addr:from:left": "L_F_ADD",
+        "addr:from:right": "R_F_ADD",
+        "addr:interpolation": "EVENODDFLG",
+        "addr:to:left": "L_T_ADD",
+        "addr:to:right": "R_T_ADD",
+        "bridge": "STRUCTURE",
+        "city:from": "JURISLOW",
+        "city:left": "JURISLEFT",
+        "city:right": "JURISRIGHT",
+        "city:to": "JURISHIGH",
+        "highway": "CLASS",
+        "maxspeed": {
+            "function": "format",
+            "fields": ["SPEEDLIMIT"],
+            "format": "$1 mph"
+        },
+        "name": "MAPLABEL",
+        "oneway": "TRVL_DIR",
+        "postcode:left": "ZIPL",
+        "postcode:right": "ZIPR",
+        "surface": "HASPAVEMENT",
+        "tunnel": "STRUCTURE",
+        "width": "PAVEWIDTH"
+    }
+}
