@@ -1,0 +1,10 @@
+version: 0.2
+
+phases:
+  install:
+    commands:
+      - pipenv install --dev --system --deploy
+  build:
+    commands:
+      - echo "Sources that have changed:"
+      - for s in $(git diff --name-only master | grep sources); do python build/etl.py $s; done
